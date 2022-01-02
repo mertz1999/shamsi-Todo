@@ -1,7 +1,8 @@
 
 # Info:
-# --- Reza Tanakizadeh
-# --- 2 Jun. 2022 
+# --- Project name : Todo list (shamsi date)
+# --- Autor        : Reza Tanakizadeh
+# --- Date         : 2 Jun. 2022 
 
 # All Tasks of this file (database.py)
 # --- 1. Make CSV file for saving data
@@ -56,8 +57,8 @@ class database():
     
 
 
-temp = database()
-temp.insert("12ba", "Call to mum!")
+# temp = database()
+# temp.insert("12ba", "Call to mum!")
 
 
 # insert('dddd', 'reere')
