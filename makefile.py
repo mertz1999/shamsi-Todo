@@ -36,7 +36,7 @@ class makefile():
     def write_to_file(self):
         #  Make header string
         path = "./todo/"+self.date+".txt"
-        header = "-"*15 + " " + self.date[0:-2] + " " + self.date_dict[date[-2::]] + " " +"-"*15
+        header = "-"*15 + " " + self.date[0:-2] + " " + self.date_dict[self.date[-2::]] + " " +"-"*15
 
         #  Make and open file
         f = open(path, "w")
@@ -51,7 +51,7 @@ class makefile():
            
         #  write all Todo Tasks
         for idx, text in enumerate(self.text_list):
-            f.write("{}. ({}) {}".format(str(idx+1), "0"*(4-len(self.id[idx]))+self.id[idx], text))
+            f.write("{}. ({}) {}".format(str(idx+1), "0"*(4-len(str(self.id[idx])))+str(self.id[idx]), text))
             f.write("\n")
         f.close()
 
