@@ -22,7 +22,7 @@ class database():
         self.database_path = database_path
         self.last_id = int(0)
         # check if csv file exist
-        if os.path.isfile(self.database_path):
+        if os.path.isfile(database_path):
             self.df = pd.read_csv(self.database_path)
         else:
             self.df = pd.DataFrame({'id':[], 'date':[], 'text':[]})
@@ -50,7 +50,7 @@ class database():
     
     # Read Data
     def read(self, date):
-        result = self.df.loc[df['date'] == date]
+        result = self.df.loc[self.df['date'] == date]
         return result
         
     
@@ -65,7 +65,7 @@ class database():
 # insert('dddd', 'reere')
 # insert('dddd', 'reere')
 # insert('88888', 'reere')
-# print(read(df, "88888"))
+# print(temp.read("88888"))
 # saving(df)
 
 

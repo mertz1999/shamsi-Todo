@@ -61,12 +61,12 @@ class makefile():
         
 
 # --- input data
-date = "30ba"
-text_list = ["Call to mr.ebrahimi at 8PM","Read PM book","Face Recognition Project"]
-id = ["1", "5", "105"]
+# date = "30ba"
+# text_list = ["Call to mr.ebrahimi at 8PM","Read PM book","Face Recognition Project"]
+# id = ["1", "5", "105"]
 
-temp = makefile(date, text_list, id)
-temp.write_to_file()
+# temp = makefile(date, text_list, id)
+# temp.write_to_file()
 
 
 
