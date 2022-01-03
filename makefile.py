@@ -10,32 +10,63 @@
 # --- import libs
 import pandas as pd
 
+# --- Make Makefile class
+class makefile():
+    def __init__(self, date, text_list, id):
+        # initilize variables
+        self.date = date
+        self.text_list = text_list
+        self.id = id
+        self.date_dict = {"fa":"Farvardin",
+                          "or":"Ordibehesht",
+                          "kh":"Khordad",
+                          "ti":"Tir",
+                          "mo":"Mordad",
+                          "sh":"Shahrivar",
+                          "me":"Mehr",
+                          "ab":"Aban",
+                          "az":"Azar",
+                          "de":"Dey",
+                          "ba":"Bahman",
+                          "es":"Esfand"}
+        # write to file based on write_to_file() function
+        self.write_to_file()
+
+    # write to file function
+    def write_to_file(self):
+        #  Make header string
+        path = "./todo/"+self.date+".txt"
+        header = "-"*15 + " " + self.date[0:-2] + " " + self.date_dict[date[-2::]] + " " +"-"*15
+
+        #  Make and open file
+        f = open(path, "w")
+
+        #  Write header to file
+        f.write('-'*len(header))
+        f.write("\n")
+        f.write(header)
+        f.write("\n")
+        f.write("\n")
+        f.write("\n")    
+           
+        #  write all Todo Tasks
+        for idx, text in enumerate(self.text_list):
+            f.write("{}. ({}) {}".format(str(idx+1), "0"*(4-len(self.id[idx]))+self.id[idx], text))
+            f.write("\n")
+        f.close()
+
+
+
+
+        
+
 # --- input data
-date = "8az"
-text = ["Call to mr.ebrahimi at 8PM","Read PM book"]
+date = "30ba"
+text_list = ["Call to mr.ebrahimi at 8PM","Read PM book","Face Recognition Project"]
+id = ["1", "5", "105"]
 
-# --- Dictionary of month
-date_dict = {"fa":"Farvardin",
-             "or":"Ordibehesht",
-             "kh":"Khordad",
-             "ti":"Tir",
-             "mo":"Mordad",
-             "sh":"Shahrivar",
-             "me":"Mehr",
-             "ab":"Aban",
-             "az":"Azar",
-             "de":"Dey",
-             "ba":"Bahman",
-             "es":"Esfand"}
+temp = makefile(date, text_list, id)
+temp.write_to_file()
 
 
-path = "./todo/"+date+".txt"
-header = "-"*15 + " " + date[0:-2] + " " + date_dict[date[-2::]] + " " +"-"*15
-
-f = open(path, "w")
-
-f.write('-'*len(header))
-f.write("\n")
-f.write(header)
-f.close()
 
