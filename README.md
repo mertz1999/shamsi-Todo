@@ -1,8 +1,8 @@
 
 ![Logo](https://dashboard.snapcraft.io/site_media/appmedia/2020/05/icon_sjsbj5P.png)
 
-<p style="align:center">
-<img src="https://dashboard.snapcraft.io/site_media/appmedia/2020/05/icon_sjsbj5P.png" />
+<p align="center">
+  <img width="100" height="100" src="https://dashboard.snapcraft.io/site_media/appmedia/2020/05/icon_sjsbj5P.png">
 </p>
 
 # Shamsi Todo list maker
