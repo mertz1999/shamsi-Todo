@@ -1,15 +1,14 @@
 
 ![Logo](https://dashboard.snapcraft.io/site_media/appmedia/2020/05/icon_sjsbj5P.png)
 
+<div style="text-align:center">
+<img src="https://dashboard.snapcraft.io/site_media/appmedia/2020/05/icon_sjsbj5P.png" />
+</div>
 
 # Shamsi Todo list maker
 
 using Todo list for managing your task during a week/month is very important. with this project i trying to make a Todo-list maker program with Shamsi Date.
 
-
-## Authors
-
-- [Reza Tanakizadeh](https://github.com/mertz1999)
 
 
 ## Deployment
@@ -59,6 +58,7 @@ python todo.py --today
 ## Feedback
 
 If you have any feedback, please reach out to us at reza.tz780210@gmail.com
+- [Reza Tanakizadeh](https://github.com/mertz1999)
 
 
 ## License
